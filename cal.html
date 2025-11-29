@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="a" placeholder="Enter first number : " required />
+    <input type="number" id="b" placeholder="Enter second number : " required />
+    <input type="submit" value="Submit" onclick="sum()" />
+  </body>
+  <script>
+    function sum() {
+      let a = Number(document.getElementById("a").value);
+      let b = Number(document.getElementById("b").value);
+      let result = a + b;
+      document.write("<h3>The sum is: " + result + "</h3>");
+    }
+  </script>
+</html>
